@@ -8,3 +8,5 @@ Yo whats up I have added a new line to this file in my text editor!!!!!!!!!!!!!
 Testing previous version tracking!!
 
 Trying to get the hang of commits and staging process!
+
+Another change to test the GitHub Desktop App commits.
