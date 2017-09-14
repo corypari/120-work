@@ -6,3 +6,5 @@ This is my first text document for one of Dr. Musick's Media Arts courses.
 Yo whats up I have added a new line to this file in my text editor!!!!!!!!!!!!!
 
 Testing previous version tracking!!
+
+Trying to get the hang of commits and staging process!
