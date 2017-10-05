@@ -42,6 +42,12 @@ I also created an image walk through for a student who was unable to change the 
 
 I already heard back from one of the students I assisted that their issue is no longer one!
 
+```html
+<body>
+<h1>Step instructions for changing file type</h1>
+<img src="changetype.png" style="width:auto;height:auto;">
+</body>
+```
 <img src="changetype.png" style="width:auto;height:auto;">
 
 #### SCREENSHOT OF EDITOR
