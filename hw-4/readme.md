@@ -1,6 +1,6 @@
 Cory Paringer 51
 
-[Self Portrait]
+[Self Portrait]https://github.com/corypari/120-work/tree/master/hw-4
 
 1. This homework addition included me creating a self portrait after learning how the various 2D draw functions and shapes work. We primarily had to pay close attention to the layering and structure of the document, as we learned there is proper structural order of operations similar to in math. For my homework, I made a creative decision to come up with a concept of a portrait I think I could pull off using these shapes. This was my head as a balloon floating off into the clouds. I chose to primarily use lines and rounded rectangles to achieve most of my features. I had to structure the document so various of the shapes would layer properly behind each other.
 
@@ -10,4 +10,4 @@ Cory Paringer 51
 
 4. I would love to understand better why when we rotate shapes we do not just rotate it from it or its group's center point rather than from the 0,0 coordinate.
 
-5. This cycle I answered a classmate's post who was looking for help understanding why his shapes were showing up in the wrong places, and sometimes not at all. I discovered with them that they had been using flipped coordinates and the objects were drawn off screen. 
+5. This cycle I answered a classmate's post who was looking for help understanding why his shapes were showing up in the wrong places, and sometimes not at all. I discovered with them that they had been using flipped coordinates and the objects were drawn off screen.
