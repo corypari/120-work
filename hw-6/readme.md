@@ -1,6 +1,6 @@
 Cory Paringer 51
 
-[Abstract Animation]https://github.com/corypari/120-work/tree/master/hw-5
+[Creative Algorhythm]https://github.com/corypari/120-work/tree/master/hw-6
 
 1. This assignment I continued my theme of exploiting my unfortunate procrastination of online homework. I decided to use the algorythmic and mathematical funtions that we learned this week to create a graph that randomly generates plot points that represent various variables. I also bound the graph so that the points reset when one of them hits the end- but I could not get it to fully function perfectly.
 
