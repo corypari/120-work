@@ -7,7 +7,6 @@ Cory Paringer, 51
 
 ## Description of What the Original Code is Doing
 
-<!--
 
 Why is it working the way it is?
 
@@ -22,11 +21,10 @@ How can you make the ball change direction?
 
 I think to change the direction of the ball so is drawn and first bounces to the left from the right would be to change the ball.x value to be -= ball.delta_x * ball*scale_x. This would have the value decrease from its start instead of increase.
 
--->
+
 
 
 ## How did you alter the sketch?
 
-<!--
+
 First I confirmed my theory that the ball would change direction by changing ball.x by making it be ball.x -= ball.delta_x*ball.scale_x instead of +. After changing the direction of the ball I moved it to start from 1, 1. Next I changed the intensity of the movement by increasing the X and Y variables to 5. I added a noStroke(); to the circles and also made it so that they decreased in size initially. I made an if statement that made it so when the ball grew larger than 1/4 the window size it would modulo and reset to a value of 2. This allowed for some cool animations, when combined with clicking the mouse. I then made the mouse click also change the color fill randomly, and also the opacity and the speed. The ball also now grows with the movement of my mouse.
--->
