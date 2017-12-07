@@ -51,17 +51,17 @@ function superE(){
 }
 function superY(){
   fill(color(random(255), random(255), random(255)));
-  dotPlace(550 + moveLetters, 0, 100);
+  dotPlace(600 + moveLetters, 0, 100);
   dotPlace(500 + moveLetters, -100, 100);
-  dotPlace(550 + moveLetters, 100, 100);
-  dotPlace(600 + moveLetters, -100, 100);
+  dotPlace(600 + moveLetters, 100, 100);
+  dotPlace(700 + moveLetters, -100, 100);
 
 }
 function superSmile(){
   fill(color(random(255), random(255), random(255)));
-  dotPlace(250 + moveLetters, 400, 300);
+  dotPlace(250 + moveLetters, 350, 300);
   fill('black');
-  ellipse(-100, 350, 25);
-  ellipse(0, 350, 25);
-  ellipse(-50, 450, 50);
+  ellipse(-100, 300, 25);
+  ellipse(0, 300, 25);
+  ellipse(-50, 350, 50);
 }
