@@ -1,18 +1,7 @@
 
-
-var ball = {};
-ball.width = 100;
-ball.x = 10;
-ball.y = 10;
-ball.delta_x = 1;
-ball.delta_y = 1;
-ball.scale_x = 20;
-ball.scale_y = 20;
-var test = 0
-
 function setup() {
     createCanvas(windowWidth, windowHeight);
-    background(255);
+    background(30);
 
 }
 
@@ -20,32 +9,59 @@ function setup() {
 
 function draw() {
 
-    ball.x -= ball.delta_x * ball.scale_x;
-    ball.y += ball.delta_y * ball.scale_y;
+  translate(windowWidth/2, windowHeight/4);
+  moveEvery();
 
-
-    if (ball.x >= width || ball.x <= 0) {
-        ball.delta_x = -1 * ball.delta_x;
-    }
-    if (ball.y >= height || ball.y <= 0) {
-        ball.delta_y = -1 * ball.delta_y;
-    }
-
-
-
-    noStroke();
-    ellipse(ball.x, ball.y, ball.width, ball.width);
 }
 
-function mousePressed() {
-    ball.scale_x = map(mouseX, 0, width, 0.5, 10);
-    ball.scale_y = map(mouseY, 0, height, 0.5, 10);
+//lets me more easily move the entire body of letters as one whole.
+var moveLetters = -300;
 
-      fill(random(255), random(255), random(255), random(255));
-    }
+function moveEvery(){
+  superH();
+  superE();
+  superY();
+  superSmile();
+}
 
-function mouseMoved() {
-    ball.width -= 1;
-    ball.width = ball.width % (width*0.2);
+function dotPlace(ballx, bally, ballwidth){
+noStroke();
+ellipse(ballx, bally, ballwidth, ballwidth);
+}
 
+function superH(){
+  fill(color(random(255), random(255), random(255)));
+  dotPlace(0 + moveLetters, 0, 100);
+  dotPlace(-100 + moveLetters, 0, 100);
+  dotPlace(-100 + moveLetters, 100, 100);
+  dotPlace(-100 + moveLetters, -100, 100);
+  dotPlace(100 + moveLetters, 100, 100);
+  dotPlace(100 + moveLetters, -100, 100);
+  dotPlace(100 + moveLetters, 0, 100)
+}
+
+function superE(){
+  fill(color(random(255), random(255), random(255)));
+  dotPlace(250 + moveLetters, 0, 100);
+  dotPlace(250 + moveLetters, -100, 100);
+  dotPlace(250 + moveLetters, 100, 100);
+  dotPlace(350 + moveLetters, 100, 100);
+  dotPlace(350 + moveLetters, -100, 100);
+
+}
+function superY(){
+  fill(color(random(255), random(255), random(255)));
+  dotPlace(550 + moveLetters, 0, 100);
+  dotPlace(500 + moveLetters, -100, 100);
+  dotPlace(550 + moveLetters, 100, 100);
+  dotPlace(600 + moveLetters, -100, 100);
+
+}
+function superSmile(){
+  fill(color(random(255), random(255), random(255)));
+  dotPlace(250 + moveLetters, 400, 300);
+  fill('black');
+  ellipse(-100, 350, 25);
+  ellipse(0, 350, 25);
+  ellipse(-50, 450, 50);
 }
