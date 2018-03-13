@@ -3,7 +3,7 @@ var sound;
 function preload()
 {
   // initialize sound
-  sound = loadSound('https://revolutionradio.ru:8443/live.ogg');
+  sound = loadSound('http://stream.radioreklama.bg/radio1.opus');
 }
 
 
