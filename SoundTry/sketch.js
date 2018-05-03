@@ -56,7 +56,7 @@ function positionPing(position){
     if(d > 0.01){
       prevPos = position;
       numOfNewStations++;
-      el = document.querySelector("#dist");
+      el = document.querySelector("#newStation");
       el.innerText = numOfNewStations;
       // start new station here
     }
