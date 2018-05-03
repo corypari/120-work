@@ -11,6 +11,7 @@ var options = {
 }
 var pos;
 var prevPos;
+var numOfNewStations = 0;
 
 
 
@@ -51,7 +52,14 @@ function positionPing(position){
       console.log(d);
     }
 
-    prevPos = position;
+    // if d is greater than some number, then do stuff
+    if(d > 0.01){
+      prevPos = position;
+      numOfNewStations++;
+      el = document.querySelector("#dist");
+      el.innerText = numOfNewStations;
+      // start new station here
+    }
 }
 
 
