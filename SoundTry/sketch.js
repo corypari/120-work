@@ -2,33 +2,61 @@ var fenceOne;
 var testSound;
 var myMap;
 var canvas;
-var mappa = new Mappa('Leaflet');
+// var mappa = new Mappa('Leaflet');
 var options = {
   lat: 0,
   lng: 0,
   zoom: 4,
   style: "http://{s}.tile.osm.org/{z}/{x}/{y}.png"
 }
+var pos;
+var prevPos;
+
+
+
 
 function setup(){
-    fenceOne = new geoFenceCircle(46.8484724,-113.98858930000002, 0.004, insideTheFence, outsideTheFence, 'mi')
-    fenceOptions = {
-      enableHighAccuracy: true,
-      timeout: 5000,
-      maximumAge: 0
-    };
+    // fenceOne = new geoFenceCircle(46.8610337,-113.98858930000002, 0.004, insideTheFence, outsideTheFence, 'mi')
+    // fenceOptions = {
+    //   enableHighAccuracy: true,
+    //   timeout: 5000,
+    //   maximumAge: 0
+    // };
+    // intervalCurrentPosition(positionPing, 5000)
+    watchPosition(positionPing);
 
     testSound = createAudio("http://www.junctionpoland.com:8000/64.ogg");
-    
+
     canvas = createCanvas(640,640);
-    myMap = mappa.tileMap(options);
-    myMap.overlay(canvas)
+    // myMap = mappa.tileMap(options);
+    // myMap.overlay(canvas)
     fill(200, 100, 100);
 
     // Only redraw the point when the map change and not every frame.
-    myMap.onChange(drawPoint);
+    // myMap.onChange(drawPoint);
 
 }
+
+function positionPing(position){
+  pos = position;
+    print("lat: " + position.latitude);
+    print("long: " + position.longitude);
+    let el = document.querySelector("#testDiv");
+    el.innerText = "pos: " + position.latitude + ", " + position.longitude;
+
+    if(prevPos != null){
+      let d = calcGeoDistance(prevPos.latitude, prevPos.longitude, position.latitude, position.longitude, 'mi');
+      el = document.querySelector("#dist");
+      el.innerText = "dist: " + d;
+      console.log(d);
+    }
+
+    prevPos = position;
+}
+
+
+
+
 
 function insideTheFence(position){
     print("INlat: " + position.latitude);
@@ -45,8 +73,8 @@ function outsideTheFence(position){
 
 }
 
-function drawPoint(){
-  clear();
-  var nigeria = myMap.latLngToPixel(11.396396, 5.076543);
-  ellipse(nigeria.x, nigeria.y, 20, 20)
-}
+// function drawPoint(){
+//   clear();
+//   var nigeria = myMap.latLngToPixel(11.396396, 5.076543);
+//   ellipse(nigeria.x, nigeria.y, 20, 20)
+// }
