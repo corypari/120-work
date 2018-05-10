@@ -15,6 +15,7 @@ var numOfPings = 0;
 
 
 function setup(){
+
   watchPosition(positionPing);
 
 //Station 1 channels
@@ -44,23 +45,23 @@ function setup(){
   testSoundTwo.push( createAudio("http://46.165.203.194/main_high.ogg") );
   testSoundTwo.push( createAudio("http://flow02.gcnlive.com/goodDay-hi.ogg") );
 //Station 3 channels
-testSoundThree.push( createAudio("http://stream.lesonparisien.com/mid.ogg") );
-testSoundThree.push( createAudio("http://stream.wuvt.vt.edu/wuvt.ogg") );
-testSoundThree.push( createAudio("http://streamhub.radioinfoweb.net:8000/studio1") );
-testSoundThree.push( createAudio("http://ebm-radio.org:9000/ebm.ogg") );
-testSoundThree.push( createAudio("http://www.radioson.ru:8009/radio-dacha.mp3") );
-testSoundThree.push( createAudio("http://station-sound.ru:8000/pt-1") );
-testSoundThree.push( createAudio("http://svobodny-vysilac.cz:8000/live.opus") );
-testSoundThree.push( createAudio("http://flow01.gcnlive.com/healthHunters-hi.ogg") );
-testSoundThree.push( createAudio("http://svobodny-vysilac.cz:8000/live16k.opus") );
-testSoundThree.push( createAudio("http://stream.cjsw.com/cjsw.ogg") );
+  testSoundThree.push( createAudio("http://stream.lesonparisien.com/mid.ogg") );
+  testSoundThree.push( createAudio("http://stream.wuvt.vt.edu/wuvt.ogg") );
+  testSoundThree.push( createAudio("http://streamhub.radioinfoweb.net:8000/studio1") );
+  testSoundThree.push( createAudio("http://ebm-radio.org:9000/ebm.ogg") );
+  testSoundThree.push( createAudio("http://www.radioson.ru:8009/radio-dacha.mp3") );
+  testSoundThree.push( createAudio("http://station-sound.ru:8000/pt-1") );
+  testSoundThree.push( createAudio("http://svobodny-vysilac.cz:8000/live.opus") );
+  testSoundThree.push( createAudio("http://flow01.gcnlive.com/healthHunters-hi.ogg") );
+  testSoundThree.push( createAudio("http://svobodny-vysilac.cz:8000/live16k.opus") );
+  testSoundThree.push( createAudio("http://stream.cjsw.com/cjsw.ogg") );
 //Station 4 Channels
-testSoundFour.push( createAudio("http://dubfun.lobocast.org.es:8003/dubfun.ogg") );
-testSoundFour.push( createAudio("http://tech.eradio-one.de:62020/low1.ogg") );
-testSoundFour.push( createAudio("http://rivendell.byte-storm.com:8000/128kbit.ogg") );
-testSoundFour.push( createAudio("http://www.shinsen-radio.org:8000/shinsen-radio.128.ogg") );
-testSoundFour.push( createAudio("http://www.1431am.org:8000/1431ogglow") );
-testSoundFour.push( createAudio("http://flow02.gcnlive.com/korelinReport-hi.ogg") );
+  testSoundFour.push( createAudio("http://dubfun.lobocast.org.es:8003/dubfun.ogg") );
+  testSoundFour.push( createAudio("http://tech.eradio-one.de:62020/low1.ogg") );
+  testSoundFour.push( createAudio("http://rivendell.byte-storm.com:8000/128kbit.ogg") );
+  testSoundFour.push( createAudio("http://www.shinsen-radio.org:8000/shinsen-radio.128.ogg") );
+  testSoundFour.push( createAudio("http://www.1431am.org:8000/1431ogglow") );
+  testSoundFour.push( createAudio("http://flow02.gcnlive.com/korelinReport-hi.ogg") );
 
 
 
