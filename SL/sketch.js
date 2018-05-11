@@ -131,7 +131,7 @@ function positionPing(position){
 
     testSoundThree[numOfNewStationsThree % testSoundThree.length].stop();
 
-    numOfNewStationsTwo++;
+    numOfNewStationsThree++;
 
     testSoundThree[numOfNewStationsThree % testSoundThree.length].play();
 
@@ -144,7 +144,7 @@ function positionPing(position){
     // start new station here
   }
   //Station 4 distance
-  if(d >= 0.01){
+  if(d >= 0.005){
     prevPos = position;
 
     testSoundFour[numOfNewStationsFour % testSoundFour.length].stop();
@@ -156,8 +156,8 @@ function positionPing(position){
 
 
 
-    el = document.querySelector("#newStationThree");
-    el.innerText = "Station 3: " + numOfNewStationsThree;
+    el = document.querySelector("#newStationFour");
+    el.innerText = "Station 4: " + numOfNewStationsFour;
     // start new station here
   }
 }
